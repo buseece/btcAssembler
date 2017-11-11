@@ -1,0 +1,79 @@
+// Cmpe230 Fall2017 Homework 1 Test-cases 
+// stTestCase 1
+$x = 1a0f
+$y = bb
+$x=$x & not($y)
+$y = rs($x,1)
+$x
+$y
+//output
+1a04
+0d02
+
+////////////////////////////////////////////////////////////////
+// stTestCase 2
+$x0 = 349
+$y22 = 1a1
+$x0 = lr($y22,2)|not($y22) 
+$y22 = rs($x0,2) | xor($y22,$z) | $y22
+$z =not(not($y22 & $x0))
+$x0
+$y22
+$z
+//output
+fede
+3fb7
+3e96
+////////////////////////////////////////////////////////////////
+// stTestCase 3
+$xx = 100f
+$yy = f001
+$zz= ($xx | $yy) & ab12 //corrected $yy = xor($xx,11) not(23fe) //syntax error 
+$xx = ls($yy, 2)
+$zz
+$yy
+$xx
+//output
+error-line-4
+////////////////////////////////////////////////////////////////
+// stTestCase 4
+$a = $b
+$b = not(xor(ls(2345,1), ff00))
+$a = $c | $b & cad
+$d = (not($b) | not($a))
+$a
+$b
+$c
+$d
+//output
+0425
+4675
+0000
+fbda
+////////////////////////////////////////////////////////////////
+// stTestCase 5
+$x = 2018
+$y = a017
+$z = $x | $t | $y | not(2017)
+$x = ls($x,2) | rr($x,2)
+$y = xor($x,xor($y,xor($z,9876)))
+$x
+$y
+$z
+$t
+//output
+8866
+4ff8 
+ffff
+0000
+
+////////////////////////////////////////////////////////////////
+// stTestCase 6
+$x11= 1a0f
+$y22 =bb
+$x11 = $x11not(&y22) //syntax error
+$y22 = rs($x11,1)
+$x11
+$y22
+//output
+error-line-3
